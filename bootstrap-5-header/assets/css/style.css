@@ -36,3 +36,92 @@ header .bg-light .navbar-nav .nav-item .nav-link{
 
 
 
+/*animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+/*animation */
+
+.w-60{
+    width: 60%;
+}
+.down-arrow-icon{
+    position: absolute;
+    bottom: 70px;
+}
+
+
+.user_layer{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+}
+.user_layer div{
+    background-color: red;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    animation: fadeInRight 2s;
+}
+
+
+
+
+
+
+
+/*animation */
+
+
+
+/*animation right*/
+
+
+@keyframes fadeInRight {
+    from {transform: translateX(200%);}
+    to {width: 0;}
+}
+
+
+.hide{
+    display: none;
+}
+
